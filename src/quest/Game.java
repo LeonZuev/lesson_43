@@ -13,6 +13,11 @@ public class Game {
     rooms.add(new Room("Кухня"));
     rooms.add(new Room("Туалет"));
     rooms.add(new Room("Коридор"));
+
+    commands.add("Вперёд");
+    commands.add("Назад");
+    commands.add("Влево");
+    commands.add("Вправо");
     // здесь будут комнаты
   }
 
@@ -27,6 +32,12 @@ public class Game {
     boolean playing = true;
     while (playing) {
       help();
+    }
+  }
+  public void help() {
+    System.out.println("Возможные команды");
+    for(int i=0; i < (commands.size();++i) {
+      System.out.println();
     }
   }
 }
